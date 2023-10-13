@@ -1,16 +1,34 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import Card from "./Components/Card";
 import GlobalStyles from "./Components/Styles/Global";
-import FormContainer from "./Components/Styles/Card.styled";
+import styled from "styled-components";
+import {
+  CardDiv,
+  ChildOne,
+  ChildTwo,
+  FormContainer,
+  ParentDiv,
+  Input,
+  H1,
+  Button,
+  H3,
+  Icon,
+  H4,
+  InputContainer,
+  DivContainer,
+  Icon2,
+  Icon3,
+  Signin,
+  StyledButton,
+  Google,
+  ButtonContainer,
+  Facebook,
+} from "./Components/Styles/Card.styled";
 import Image from "./Components/Styles/Image.styled";
 import image from "./Components/Styles/illustration-your-users.svg";
-import { H1, P } from "./Components/Styles/Heading.styled";
-import { Input } from "./Components/Styles/Input.styled";
 import arr from "./content";
-import styled from "styled-components";
-import { Button } from "./Components/Styles/Button.styled";
+import { FaUserAlt } from "react-icons/fa";
+import { FiSearch } from "react-icons/fi";
 
 const theme = {
   colors: {
@@ -25,24 +43,56 @@ function App() {
   return (
     <div className="App">
       <GlobalStyles theme={theme} />
-      <div style={{ border: '2px solid green' }}>
-      {/* <FormContainer theme={theme} />
-      <Image src={image} theme={theme} />
-      <H1 theme={theme}>Student Signup</H1>
-      <P theme={theme}>Enter your details to create your account</P>
-      {/* <InputContainer>
-        <Input placeholder='Enter Name'/>
-        <Input placeholder='Enter Name'/> 
-      </InputContainer> */}
-      <div>
-        {arr.map((item, index) => {
-          return <Input placeholder={item.text} id={index} />;
-        })}
-      </div> 
-      {/* <Input placeholder='Enter Name'/> */}
-      {/* <Input placeholder='Enter Name'/> */}
-      <Button theme={theme}>Sign Up</Button>
-      </div>
+      <FormContainer>
+        <CardDiv>
+          <ParentDiv>
+            <ChildOne>
+              <Image src={image} />
+            </ChildOne>
+            <ChildTwo>
+              <H1>Student SignUp</H1>
+              <H4>Hey Enter Your Details To Create Your Account</H4>
+
+              <DivContainer >
+              <InputContainer>
+                <Icon />
+                <Input placeholder="Enter your Name" type="text" />
+              </InputContainer>
+              <InputContainer>
+              <Icon />
+                <Input placeholder="Enter Email" />
+              </InputContainer>
+              <InputContainer>
+              <Icon2 />
+                <Input placeholder="Enter Your Phone Number" />
+              </InputContainer>
+              <InputContainer>
+              <Icon3 />
+                <Input placeholder="Create Password" />
+              </InputContainer>
+              </DivContainer>
+              <Button>Sign Up</Button>
+              <H3>Or Signup with</H3>
+
+              <ButtonContainer>
+              <StyledButton>
+                <Google />
+              </StyledButton>
+
+
+              <StyledButton>
+                <Facebook />
+              </StyledButton>
+
+              </ButtonContainer>
+
+              <H3>Already have an account? <span>Sign In</span></H3>
+
+
+            </ChildTwo>
+          </ParentDiv>
+        </CardDiv>
+      </FormContainer>
     </div>
   );
 }

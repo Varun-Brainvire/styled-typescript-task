@@ -14,6 +14,10 @@ export const FormContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: 992px) {
+    height:100%;
+}
 `;
 
 export const CardDiv = styled.div`
@@ -24,12 +28,24 @@ export const CardDiv = styled.div`
   align-items: center;
   width: 1000px;
   height: 75vh;
+
+  @media only screen and (max-width: 992px) {
+    height:100%;
+    width: 100%;
+    border-radius: 0px;
+}
 `;
 
 export const ParentDiv = styled.div`
   width: 1000px;
   height: 75vh;
   display: flex;
+
+  @media only screen and (max-width: 992px) {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
 `;
 
 export const ChildOne = styled.div`
@@ -40,12 +56,24 @@ export const ChildOne = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 20px 0px 0px 20px;
+
+  @media only screen and (max-width: 992px) {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+}
 `;
 export const Image = styled.img`
   /* display: flex; */
   /* justify-content: center; */
   width: 700px;
   height: 70vh;
+
+  @media only screen and (max-width: 992px) {
+    width: 100%;
+    /* height: 100%; */
+
+}
 `;
 
 export const ChildTwo = styled.div`
@@ -56,6 +84,12 @@ export const ChildTwo = styled.div`
   /* display: flex; */
   /* justify-content: center; */
   /* align-items: center; */
+
+  @media only screen and (max-width: 992px) {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+}
 `;
 
 export const H1 = styled.h1`
@@ -111,6 +145,12 @@ export const Button = styled.button`
   background-color: blue;
   border-radius: 10px;
   font-size: 15px;
+
+  @media only screen and (max-width: 992px) {
+    /* width: 100%; */
+    /* height: 100%; */
+
+}
 `;
 
 export const H3 = styled.h3`
@@ -143,6 +183,11 @@ export const ButtonContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 992px) {
+    flex-direction: column;
+
+}
 `;
 
 export const StyledButton = styled.button`
@@ -175,6 +220,11 @@ export const StyledButton = styled.button`
   width: 200px;
   padding: 10px;
 
+  @media only screen and (max-width: 992px) {
+    margin-bottom:5px;
+
+}
+
   :hover {
     transform: translateY(-1px);
     border-color: rgba(0, 0, 0, 0.15);
@@ -189,7 +239,9 @@ export const StyledButton = styled.button`
     color: rgba(0, 0, 0, 0.65);
     transform: translateY(0);
   }
-`;
+`
+
+
 
 // export const Input = styled.input`
 //   width: 100%;

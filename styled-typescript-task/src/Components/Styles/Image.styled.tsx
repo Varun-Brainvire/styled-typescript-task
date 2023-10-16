@@ -7,8 +7,9 @@ top: 18%;
 left: 14%;
 height: 457px;
 
-@media (max-width: ${({ theme }) => theme.mobile}) {
-    flex-direction: column;
-  }
+@media only screen and (min-width: 390px) {
+    /* height:100%; */
+    width: 100%;
+}
 `
 export default Image

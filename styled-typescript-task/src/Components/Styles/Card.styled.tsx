@@ -7,7 +7,6 @@ import { FaKey } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 
-// import image from "./Components/Styles/illustration-your-users.svg";
 
 export const FormContainer = styled.div`
   height: 100vh;
@@ -240,43 +239,3 @@ export const StyledButton = styled.button`
     transform: translateY(0);
   }
 `
-
-
-
-// export const Input = styled.input`
-//   width: 100%;
-//   height: 36px;
-//   padding-left: 12px;
-//   font-size: 14px;
-//   font-weight: normal;
-//   border: none;
-//   transition: border-color 150ms ease-in-out 0s;
-//   outline: none;
-//   color: rgb(33, 49, 60);
-//   background-color: rgb(255, 255, 255);
-//   /* border:1px solid black; */
-
-//   :hover {
-//     box-shadow: rgb(231 238 236) 0px 0px 0px 3px;
-//   }
-// `;
-
-// export const Icon = styled(FiSearch)`
-//   color: red;
-//   margin-left: 13px;
-// `;
-
-// export const InputContainer = styled.div`
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   border: 1px solid rgb(191, 195, 196);
-//   margin-bottom: 10px;
-//   border-radius: 6px;
-// `;
-
-// export const InputDiv = styled.div`
-
-//    padding: 20px;
-
-// `
